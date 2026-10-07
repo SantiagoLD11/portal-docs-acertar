@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuestionario de Factores de Riesgo Psicosocial Intralaboral - Forma A</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        .bg-aquamarine {
+            background-color: #7FFFD4;
+        }
+        .bg-light-aquamarine {
+            background-color: #E0F7FA;
+        }
+        .border-aquamarine {
+            border-color: #4DB6AC;
+        }
+        .text-aquamarine {
+            color: #008080;
+        }
+        .hover\:bg-aquamarine-dark:hover {
+            background-color: #4DB6AC;
+        }
+        .section-title {
+            background: linear-gradient(90deg, #7FFFD4, #E0F7FA);
+        }
+        .radio-aquamarine:checked {
+            background-color: #4DB6AC;
+            border-color: #4DB6AC;
+        }
+    </style>
+</head>
+<body class="bg-light-aquamarine">
+    <div class="container mx-auto px-4 py-8 max-w-5xl">
+        <!-- Encabezado -->
+        <div class="bg-aquamarine rounded-xl shadow-lg p-6 mb-8 relative overflow-hidden">
+            <div class="absolute top-0 right-0 opacity-20">
+                <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M100 0C44.8 0 0 44.8 0 100C0 155.2 44.8 200 100 200C155.2 200 200 155.2 200 100C200 44.8 155.2 0 100 0Z" fill="white"/>
+                </svg>
+            </div>
+            <div class="flex flex-col md:flex-row justify-between items-start relative z-10">
+                <div class="mb-4 md:mb-0">
+                    <h1 class="text-2xl md:text-3xl font-bold text-white">CUESTIONARIO DE FACTORES DE RIESGO PSICOSOCIAL INTRALABORAL</h1>
+                    <h2 class="text-xl md:text-2xl font-semibold text-white mt-2">FORMA A</h2>
+                    <div class="mt-4 text-white text-sm">
+                        <p>Ministerio de la Protección Social</p>
+                        <p>República de Colombia</p>
+                        <p class="font-bold mt-2">Pontificia Universidad JAVERIANA - Bogotá</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg p-4 shadow-md w-full md:w-64">
+                    <div class="mb-3">
+                        <label class="block text-sm font-medium text-aquamarine">Fecha de aplicación:</label>
+                        <input type="date" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-aquamarine focus:ring focus:ring-aquamarine focus:ring-opacity-50">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-aquamarine">ID del respondiente:</label>
+                        <input type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-aquamarine focus:ring focus:ring-aquamarine focus:ring-opacity-50">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Instrucciones -->
+        <div class="bg-white rounded-xl shadow-md p-6 mb-8 border-l-4 border-aquamarine">
+            <h3 class="text-xl font-bold text-aquamarine mb-4 flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                INSTRUCCIONES
+            </h3>
+            <div class="space-y-3 text-gray-700">
+                <p>Este cuestionario de factores psicosociales busca conocer su opinión sobre algunos aspectos de su trabajo.</p>
+                <p>Le agradecemos que usted se sirva contestar a las siguientes preguntas de forma absolutamente sincera. Las respuestas que usted dé al cuestionario, no son ni buenas, ni malas, lo importante es que reflejen su manera de pensar sobre su trabajo.</p>
+                <p>Al responder por favor lea cuidadosamente cada pregunta, luego piense como es su trabajo y responda a todas las preguntas, en cada una de ellas marque una sola respuesta. Señale con una "X" en la casilla de la respuesta que refleje mejor su trabajo. Si se equivoca en una respuesta táchela y escriba la correcta.</p>
+            </div>
+            
+            <div class="bg-gray-50 p-4 rounded-lg mt-6">
+                <h4 class="font-bold text-aquamarine mb-3 flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                    </svg>
+                    Ejemplo
+                </h4>
+                <div class="overflow-x-auto">
+                    <table class="w-full border-collapse">
+                        <thead>
+                            <tr class="bg-aquamarine text-white">
+                                <th class="p-2 text-left w-1/3">Mi trabajo es repetitivo</th>
+                                <th class="p-2 text-center">Siempre</th>
+                                <th class="p-2 text-center">Casi siempre</th>
+                                <th class="p-2 text-center">Algunas veces</th>
+                                <th class="p-2 text-center">Casi nunca</th>
+                                <th class="p-2 text-center">Nunca</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b border-gray-200">
+                                <td class="p-2"></td>
+                                <td class="p-2 text-center"><input type="radio" name="ejemplo" class="h-4 w-4 text-aquamarine" checked></td>
+                                <td class="p-2 text-center"><input type="radio" name="ejemplo" class="h-4 w-4 text-aquamarine"></td>
+                                <td class="p-2 text-center"><input type="radio" name="ejemplo" class="h-4 w-4 text-aquamarine"></td>
+                                <td class="p-2 text-center"><input type="radio" name="ejemplo" class="h-4 w-4 text-aquamarine"></td>
+                                <td class="p-2 text-center"><input type="radio" name="ejemplo" class="h-4 w-4 text-aquamarine"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="flex justify-between mt-3 text-sm text-gray-600">
+                    <span>Respuesta definitiva</span>
+                    <span>Respuesta equivocada</span>
+                </div>
+            </div>
+            
+            <div class="mt-6 space-y-3 text-gray-700">
+                <p>Tenga presente que el cuestionario NO lo evalúa a usted como trabajador, sino busca conocer cómo es el trabajo que le han asignado.</p>
+                <p>Sus respuestas serán manejadas de forma absolutamente confidencial.</p>
+                <p>Si tiene dudas respecto a una pregunta, solicite mayor explicación a la persona que le entregó el cuestionario.</p>
+                <p>El cuestionario no tiene límite de tiempo; sin embargo, aproximadamente usted requerirá 1 hora para contestar todas las preguntas.</p>
+                <p class="font-bold text-aquamarine mt-4">Gracias por su colaboración.</p>
+            </div>
+        </div>
+
+        <!-- Sección 1: Condiciones ambientales -->
+        <div class="mb-8">
+            <div class="section-title rounded-t-lg p-3 text-white font-bold flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
+                </svg>
+                Condiciones ambientales del(los) sitio(s) o lugar(es) donde habitualmente realiza su trabajo
+            </div>
+            <div class="bg-white rounded-b-lg shadow-md p-4 overflow-x-auto">
+                <table class="w-full border-collapse">
+                    <thead>
+                        <tr class="bg-aquamarine text-white">
+                            <th class="p-3 text-left w-1/2">Pregunta</th>
+                            <th class="p-3 text-center">Siempre</th>
+                            <th class="p-3 text-center">Casi siempre</th>
+                            <th class="p-3 text-center">Algunas veces</th>
+                            <th class="p-3 text-center">Casi nunca</th>
+                            <th class="p-3 text-center">Nunca</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="p-3">1. El ruido en el lugar donde trabajo es molesto</td>
+                            <td class="p-3 text-center"><input type="radio" name="p1" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p1" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p1" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p1" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p1" class="h-4 w-4 text-aquamarine"></td>
+                        </tr>
+                        <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="p-3">2. En el lugar donde trabajo hace mucho frío</td>
+                            <td class="p-3 text-center"><input type="radio" name="p2" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p2" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p2" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p2" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p2" class="h-4 w-4 text-aquamarine"></td>
+                        </tr>
+                        <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="p-3">3. En el lugar donde trabajo hace mucho calor</td>
+                            <td class="p-3 text-center"><input type="radio" name="p3" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p3" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p3" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p3" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p3" class="h-4 w-4 text-aquamarine"></td>
+                        </tr>
+                        <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="p-3">4. El aire en el lugar donde trabajo es fresco y agradable</td>
+                            <td class="p-3 text-center"><input type="radio" name="p4" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p4" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p4" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p4" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p4" class="h-4 w-4 text-aquamarine"></td>
+                        </tr>
+                        <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="p-3">5. La luz del sitio donde trabajo es agradable</td>
+                            <td class="p-3 text-center"><input type="radio" name="p5" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p5" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p5" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p5" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p5" class="h-4 w-4 text-aquamarine"></td>
+                        </tr>
+                        <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="p-3">6. El espacio donde trabajo es cómodo</td>
+                            <td class="p-3 text-center"><input type="radio" name="p6" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p6" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p6" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p6" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p6" class="h-4 w-4 text-aquamarine"></td>
+                        </tr>
+                        <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="p-3">7. En mi trabajo me preocupa estar expuesto a sustancias químicas que afecten mi salud</td>
+                            <td class="p-3 text-center"><input type="radio" name="p7" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p7" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p7" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p7" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p7" class="h-4 w-4 text-aquamarine"></td>
+                        </tr>
+                        <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="p-3">8. Mi trabajo me exige hacer mucho esfuerzo físico</td>
+                            <td class="p-3 text-center"><input type="radio" name="p8" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p8" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p8" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p8" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p8" class="h-4 w-4 text-aquamarine"></td>
+                        </tr>
+                        <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="p-3">9. Los equipos o herramientas con los que trabajo son cómodos</td>
+                            <td class="p-3 text-center"><input type="radio" name="p9" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p9" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p9" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p9" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p9" class="h-4 w-4 text-aquamarine"></td>
+                        </tr>
+                        <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="p-3">10. En mi trabajo me preocupa estar expuesto a microbios, animales o plantas que afecten mi salud</td>
+                            <td class="p-3 text-center"><input type="radio" name="p10" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p10" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p10" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p10" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p10" class="h-4 w-4 text-aquamarine"></td>
+                        </tr>
+                        <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="p-3">11. Me preocupa accidentarme en mi trabajo</td>
+                            <td class="p-3 text-center"><input type="radio" name="p11" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p11" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p11" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p11" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p11" class="h-4 w-4 text-aquamarine"></td>
+                        </tr>
+                        <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="p-3">12. El lugar donde trabajo es limpio y ordenado</td>
+                            <td class="p-3 text-center"><input type="radio" name="p12" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p12" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p12" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p12" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p12" class="h-4 w-4 text-aquamarine"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Sección 2: Cantidad de trabajo -->
+        <div class="mb-8">
+            <div class="section-title rounded-t-lg p-3 text-white font-bold flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+                </svg>
+                Cantidad de trabajo que usted tiene a cargo
+            </div>
+            <div class="bg-white rounded-b-lg shadow-md p-4 overflow-x-auto">
+                <table class="w-full border-collapse">
+                    <thead>
+                        <tr class="bg-aquamarine text-white">
+                            <th class="p-3 text-left w-1/2">Pregunta</th>
+                            <th class="p-3 text-center">Siempre</th>
+                            <th class="p-3 text-center">Casi siempre</th>
+                            <th class="p-3 text-center">Algunas veces</th>
+                            <th class="p-3 text-center">Casi nunca</th>
+                            <th class="p-3 text-center">Nunca</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="p-3">13. Por la cantidad de trabajo que tengo debo quedarme tiempo adicional</td>
+                            <td class="p-3 text-center"><input type="radio" name="p13" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p13" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p13" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p13" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p13" class="h-4 w-4 text-aquamarine"></td>
+                        </tr>
+                        <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="p-3">14. Me alcanza el tiempo de trabajo para tener al día mis deberes</td>
+                            <td class="p-3 text-center"><input type="radio" name="p14" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p14" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p14" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p14" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p14" class="h-4 w-4 text-aquamarine"></td>
+                        </tr>
+                        <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="p-3">15. Por la cantidad de trabajo que tengo debo trabajar sin parar</td>
+                            <td class="p-3 text-center"><input type="radio" name="p15" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p15" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p15" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p15" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p15" class="h-4 w-4 text-aquamarine"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Sección 3: Esfuerzo mental -->
+        <div class="mb-8">
+            <div class="section-title rounded-t-lg p-3 text-white font-bold flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                </svg>
+                Esfuerzo mental que le exige su trabajo
+            </div>
+            <div class="bg-white rounded-b-lg shadow-md p-4 overflow-x-auto">
+                <table class="w-full border-collapse">
+                    <thead>
+                        <tr class="bg-aquamarine text-white">
+                            <th class="p-3 text-left w-1/2">Pregunta</th>
+                            <th class="p-3 text-center">Siempre</th>
+                            <th class="p-3 text-center">Casi siempre</th>
+                            <th class="p-3 text-center">Algunas veces</th>
+                            <th class="p-3 text-center">Casi nunca</th>
+                            <th class="p-3 text-center">Nunca</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="p-3">16. Mi trabajo me exige hacer mucho esfuerzo mental</td>
+                            <td class="p-3 text-center"><input type="radio" name="p16" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p16" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p16" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p16" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p16" class="h-4 w-4 text-aquamarine"></td>
+                        </tr>
+                        <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="p-3">17. Mi trabajo me exige estar muy concentrado</td>
+                            <td class="p-3 text-center"><input type="radio" name="p17" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p17" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p17" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p17" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p17" class="h-4 w-4 text-aquamarine"></td>
+                        </tr>
+                        <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="p-3">18. Mi trabajo me exige memorizar mucha información</td>
+                            <td class="p-3 text-center"><input type="radio" name="p18" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p18" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p18" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p18" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p18" class="h-4 w-4 text-aquamarine"></td>
+                        </tr>
+                        <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="p-3">19. En mi trabajo tengo que tomar decisiones difíciles muy rápido</td>
+                            <td class="p-3 text-center"><input type="radio" name="p19" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p19" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p19" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p19" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p19" class="h-4 w-4 text-aquamarine"></td>
+                        </tr>
+                        <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="p-3">20. Mi trabajo me exige atender a muchos asuntos al mismo tiempo</td>
+                            <td class="p-3 text-center"><input type="radio" name="p20" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p20" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p20" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p20" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p20" class="h-4 w-4 text-aquamarine"></td>
+                        </tr>
+                        <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="p-3">21. Mi trabajo requiere que me fije en pequeños detalles</td>
+                            <td class="p-3 text-center"><input type="radio" name="p21" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p21" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p21" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p21" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p21" class="h-4 w-4 text-aquamarine"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Sección 4: Responsabilidades -->
+        <div class="mb-8">
+            <div class="section-title rounded-t-lg p-3 text-white font-bold flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg>
+                Responsabilidades y actividades que usted debe hacer en su trabajo
+            </div>
+            <div class="bg-white rounded-b-lg shadow-md p-4 overflow-x-auto">
+                <table class="w-full border-collapse">
+                    <thead>
+                        <tr class="bg-aquamarine text-white">
+                            <th class="p-3 text-left w-1/2">Pregunta</th>
+                            <th class="p-3 text-center">Siempre</th>
+                            <th class="p-3 text-center">Casi siempre</th>
+                            <th class="p-3 text-center">Algunas veces</th>
+                            <th class="p-3 text-center">Casi nunca</th>
+                            <th class="p-3 text-center">Nunca</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="p-3">22. En mi trabajo respondo por cosas de mucho valor</td>
+                            <td class="p-3 text-center"><input type="radio" name="p22" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p22" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p22" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p22" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p22" class="h-4 w-4 text-aquamarine"></td>
+                        </tr>
+                        <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="p-3">23. En mi trabajo respondo por dinero de la empresa</td>
+                            <td class="p-3 text-center"><input type="radio" name="p23" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p23" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p23" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p23" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p23" class="h-4 w-4 text-aquamarine"></td>
+                        </tr>
+                        <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="p-3">24. Como parte de mis funciones debo responder por la seguridad de otros</td>
+                            <td class="p-3 text-center"><input type="radio" name="p24" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p24" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p24" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p24" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p24" class="h-4 w-4 text-aquamarine"></td>
+                        </tr>
+                        <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="p-3">25. Respondo ante mi jefe por los resultados de toda mi área de trabajo</td>
+                            <td class="p-3 text-center"><input type="radio" name="p25" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p25" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p25" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p25" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p25" class="h-4 w-4 text-aquamarine"></td>
+                        </tr>
+                        <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="p-3">26. Mi trabajo me exige cuidar la salud de otras personas</td>
+                            <td class="p-3 text-center"><input type="radio" name="p26" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p26" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p26" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p26" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p26" class="h-4 w-4 text-aquamarine"></td>
+                        </tr>
+                        <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="p-3">27. En el trabajo me dan órdenes contradictorias</td>
+                            <td class="p-3 text-center"><input type="radio" name="p27" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p27" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p27" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p27" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p27" class="h-4 w-4 text-aquamarine"></td>
+                        </tr>
+                        <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="p-3">28. En mi trabajo me piden hacer cosas innecesarias</td>
+                            <td class="p-3 text-center"><input type="radio" name="p28" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p28" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p28" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p28" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p28" class="h-4 w-4 text-aquamarine"></td>
+                        </tr>
+                        <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="p-3">29. En mi trabajo se presentan situaciones en las que debo pasar por alto normas o procedimientos</td>
+                            <td class="p-3 text-center"><input type="radio" name="p29" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p29" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p29" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p29" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p29" class="h-4 w-4 text-aquamarine"></td>
+                        </tr>
+                        <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="p-3">30. En mi trabajo tengo que hacer cosas que se podrían hacer de una forma más práctica</td>
+                            <td class="p-3 text-center"><input type="radio" name="p30" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p30" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p30" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p30" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p30" class="h-4 w-4 text-aquamarine"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Sección 5: Jornada de trabajo -->
+        <div class="mb-8">
+            <div class="section-title rounded-t-lg p-3 text-white font-bold flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                Jornada de trabajo
+            </div>
+            <div class="bg-white rounded-b-lg shadow-md p-4 overflow-x-auto">
+                <table class="w-full border-collapse">
+                    <thead>
+                        <tr class="bg-aquamarine text-white">
+                            <th class="p-3 text-left w-1/2">Pregunta</th>
+                            <th class="p-3 text-center">Siempre</th>
+                            <th class="p-3 text-center">Casi siempre</th>
+                            <th class="p-3 text-center">Algunas veces</th>
+                            <th class="p-3 text-center">Casi nunca</th>
+                            <th class="p-3 text-center">Nunca</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="p-3">31. Trabajo en horario de noche</td>
+                            <td class="p-3 text-center"><input type="radio" name="p31" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p31" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p31" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p31" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p31" class="h-4 w-4 text-aquamarine"></td>
+                        </tr>
+                        <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="p-3">32. En mi trabajo es posible tomar pausas para descansar</td>
+                            <td class="p-3 text-center"><input type="radio" name="p32" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p32" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p32" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p32" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p32" class="h-4 w-4 text-aquamarine"></td>
+                        </tr>
+                        <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="p-3">33. Mi trabajo me exige laborar en días de descanso, festivos o fines de semana</td>
+                            <td class="p-3 text-center"><input type="radio" name="p33" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p33" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p33" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p33" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p33" class="h-4 w-4 text-aquamarine"></td>
+                        </tr>
+                        <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="p-3">34. En mi trabajo puedo tomar fines de semana o días de descanso al mes</td>
+                            <td class="p-3 text-center"><input type="radio" name="p34" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p34" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p34" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p34" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p34" class="h-4 w-4 text-aquamarine"></td>
+                        </tr>
+                        <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="p-3">35. Cuando estoy en casa sigo pensando en el trabajo</td>
+                            <td class="p-3 text-center"><input type="radio" name="p35" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p35" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p35" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p35" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p35" class="h-4 w-4 text-aquamarine"></td>
+                        </tr>
+                        <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="p-3">36. Discuto con mi familia o amigos por causa de mi trabajo</td>
+                            <td class="p-3 text-center"><input type="radio" name="p36" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p36" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p36" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p36" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p36" class="h-4 w-4 text-aquamarine"></td>
+                        </tr>
+                        <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="p-3">37. Debo atender asuntos de trabajo cuando estoy en casa</td>
+                            <td class="p-3 text-center"><input type="radio" name="p37" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p37" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p37" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p37" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p37" class="h-4 w-4 text-aquamarine"></td>
+                        </tr>
+                        <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="p-3">38. Por mi trabajo el tiempo que paso con mi familia y amigos es muy poco</td>
+                            <td class="p-3 text-center"><input type="radio" name="p38" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p38" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p38" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p38" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p38" class="h-4 w-4 text-aquamarine"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Sección 6: Decisiones y control -->
+        <div class="mb-8">
+            <div class="section-title rounded-t-lg p-3 text-white font-bold flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+                </svg>
+                Decisiones y control que le permite su trabajo
+            </div>
+            <div class="bg-white rounded-b-lg shadow-md p-4 overflow-x-auto">
+                <table class="w-full border-collapse">
+                    <thead>
+                        <tr class="bg-aquamarine text-white">
+                            <th class="p-3 text-left w-1/2">Pregunta</th>
+                            <th class="p-3 text-center">Siempre</th>
+                            <th class="p-3 text-center">Casi siempre</th>
+                            <th class="p-3 text-center">Algunas veces</th>
+                            <th class="p-3 text-center">Casi nunca</th>
+                            <th class="p-3 text-center">Nunca</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="p-3">39. Mi trabajo me permite desarrollar mis habilidades</td>
+                            <td class="p-3 text-center"><input type="radio" name="p39" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p39" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p39" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p39" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p39" class="h-4 w-4 text-aquamarine"></td>
+                        </tr>
+                        <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="p-3">40. Mi trabajo me permite aplicar mis conocimientos</td>
+                            <td class="p-3 text-center"><input type="radio" name="p40" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p40" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p40" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p40" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p40" class="h-4 w-4 text-aquamarine"></td>
+                        </tr>
+                        <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="p-3">41. Mi trabajo me permite aprender nuevas cosas</td>
+                            <td class="p-3 text-center"><input type="radio" name="p41" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p41" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p41" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p41" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p41" class="h-4 w-4 text-aquamarine"></td>
+                        </tr>
+                        <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="p-3">42. Me asignan el trabajo teniendo en cuenta mis capacidades</td>
+                            <td class="p-3 text-center"><input type="radio" name="p42" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p42" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p42" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p42" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p42" class="h-4 w-4 text-aquamarine"></td>
+                        </tr>
+                        <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="p-3">43. Puedo tomar pausas cuando las necesito</td>
+                            <td class="p-3 text-center"><input type="radio" name="p43" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p43" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p43" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p43" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p43" class="h-4 w-4 text-aquamarine"></td>
+                        </tr>
+                        <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="p-3">44. Puedo decidir cuánto trabajo hago en el día</td>
+                            <td class="p-3 text-center"><input type="radio" name="p44" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p44" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p44" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p44" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p44" class="h-4 w-4 text-aquamarine"></td>
+                        </tr>
+                        <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="p-3">45. Puedo decidir la velocidad a la que trabajo</td>
+                            <td class="p-3 text-center"><input type="radio" name="p45" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p45" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p45" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p45" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p45" class="h-4 w-4 text-aquamarine"></td>
+                        </tr>
+                        <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="p-3">46. Puedo cambiar el orden de las actividades en mi trabajo</td>
+                            <td class="p-3 text-center"><input type="radio" name="p46" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p46" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p46" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p46" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p46" class="h-4 w-4 text-aquamarine"></td>
+                        </tr>
+                        <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="p-3">47. Puedo parar un momento mi trabajo para atender algún asunto personal</td>
+                            <td class="p-3 text-center"><input type="radio" name="p47" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p47" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p47" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p47" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p47" class="h-4 w-4 text-aquamarine"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Sección 7: Cambios en el trabajo -->
+        <div class="mb-8">
+            <div class="section-title rounded-t-lg p-3 text-white font-bold flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                </svg>
+                Cambios que ocurren en su trabajo
+            </div>
+            <div class="bg-white rounded-b-lg shadow-md p-4 overflow-x-auto">
+                <table class="w-full border-collapse">
+                    <thead>
+                        <tr class="bg-aquamarine text-white">
+                            <th class="p-3 text-left w-1/2">Pregunta</th>
+                            <th class="p-3 text-center">Siempre</th>
+                            <th class="p-3 text-center">Casi siempre</th>
+                            <th class="p-3 text-center">Algunas veces</th>
+                            <th class="p-3 text-center">Casi nunca</th>
+                            <th class="p-3 text-center">Nunca</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="p-3">48. Los cambios en mi trabajo han sido beneficiosos</td>
+                            <td class="p-3 text-center"><input type="radio" name="p48" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p48" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p48" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p48" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p48" class="h-4 w-4 text-aquamarine"></td>
+                        </tr>
+                        <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="p-3">49. Me explican claramente los cambios que ocurren en mi trabajo</td>
+                            <td class="p-3 text-center"><input type="radio" name="p49" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p49" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p49" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p49" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p49" class="h-4 w-4 text-aquamarine"></td>
+                        </tr>
+                        <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="p-3">50. Puedo dar sugerencias sobre los cambios que ocurren en mi trabajo</td>
+                            <td class="p-3 text-center"><input type="radio" name="p50" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p50" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p50" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p50" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p50" class="h-4 w-4 text-aquamarine"></td>
+                        </tr>
+                        <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="p-3">51. Cuando se presentan cambios en mi trabajo se tienen en cuenta mis ideas y sugerencias</td>
+                            <td class="p-3 text-center"><input type="radio" name="p51" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p51" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p51" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p51" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p51" class="h-4 w-4 text-aquamarine"></td>
+                        </tr>
+                        <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="p-3">52. Los cambios que se presentan en mi trabajo dificultan mi labor</td>
+                            <td class="p-3 text-center"><input type="radio" name="p52" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p52" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p52" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p52" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p52" class="h-4 w-4 text-aquamarine"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Sección 8: Información sobre el trabajo -->
+        <div class="mb-8">
+            <div class="section-title rounded-t-lg p-3 text-white font-bold flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+                </svg>
+                Información que la empresa le ha dado sobre su trabajo
+            </div>
+            <div class="bg-white rounded-b-lg shadow-md p-4 overflow-x-auto">
+                <table class="w-full border-collapse">
+                    <thead>
+                        <tr class="bg-aquamarine text-white">
+                            <th class="p-3 text-left w-1/2">Pregunta</th>
+                            <th class="p-3 text-center">Siempre</th>
+                            <th class="p-3 text-center">Casi siempre</th>
+                            <th class="p-3 text-center">Algunas veces</th>
+                            <th class="p-3 text-center">Casi nunca</th>
+                            <th class="p-3 text-center">Nunca</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="p-3">53. Me informan con claridad cuáles son mis funciones</td>
+                            <td class="p-3 text-center"><input type="radio" name="p53" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p53" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p53" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p53" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p53" class="h-4 w-4 text-aquamarine"></td>
+                        </tr>
+                        <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="p-3">54. Me informan cuáles son las decisiones que puedo tomar en mi trabajo</td>
+                            <td class="p-3 text-center"><input type="radio" name="p54" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p54" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p54" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p54" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p54" class="h-4 w-4 text-aquamarine"></td>
+                        </tr>
+                        <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="p-3">55. Me explican claramente los resultados que debo lograr en mi trabajo</td>
+                            <td class="p-3 text-center"><input type="radio" name="p55" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p55" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p55" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p55" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p55" class="h-4 w-4 text-aquamarine"></td>
+                        </tr>
+                        <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="p-3">56. Me explican claramente el efecto de mi trabajo en la empresa</td>
+                            <td class="p-3 text-center"><input type="radio" name="p56" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p56" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p56" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p56" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p56" class="h-4 w-4 text-aquamarine"></td>
+                        </tr>
+                        <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="p-3">57. Me explican claramente los objetivos de mi trabajo</td>
+                            <td class="p-3 text-center"><input type="radio" name="p57" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p57" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p57" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p57" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p57" class="h-4 w-4 text-aquamarine"></td>
+                        </tr>
+                        <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="p-3">58. Me informan claramente quien me puede orientar para hacer mi trabajo</td>
+                            <td class="p-3 text-center"><input type="radio" name="p58" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p58" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p58" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p58" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p58" class="h-4 w-4 text-aquamarine"></td>
+                        </tr>
+                        <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="p-3">59. Me informan claramente con quien puedo resolver los asuntos de trabajo</td>
+                            <td class="p-3 text-center"><input type="radio" name="p59" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p59" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p59" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p59" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p59" class="h-4 w-4 text-aquamarine"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Sección 9: Formación y capacitación -->
+        <div class="mb-8">
+            <div class="section-title rounded-t-lg p-3 text-white font-bold flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path d="M12 14l9-5-9-5-9 5 9 5z" />
+                    <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
+                </svg>
+                Formación y capacitación que la empresa le facilita
+            </div>
+            <div class="bg-white rounded-b-lg shadow-md p-4 overflow-x-auto">
+                <table class="w-full border-collapse">
+                    <thead>
+                        <tr class="bg-aquamarine text-white">
+                            <th class="p-3 text-left w-1/2">Pregunta</th>
+                            <th class="p-3 text-center">Siempre</th>
+                            <th class="p-3 text-center">Casi siempre</th>
+                            <th class="p-3 text-center">Algunas veces</th>
+                            <th class="p-3 text-center">Casi nunca</th>
+                            <th class="p-3 text-center">Nunca</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="p-3">60. La empresa me permite asistir a capacitaciones relacionadas con mi trabajo</td>
+                            <td class="p-3 text-center"><input type="radio" name="p60" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p60" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p60" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p60" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p60" class="h-4 w-4 text-aquamarine"></td>
+                        </tr>
+                        <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="p-3">61. Recibo capacitación útil para hacer mi trabajo</td>
+                            <td class="p-3 text-center"><input type="radio" name="p61" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p61" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p61" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p61" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p61" class="h-4 w-4 text-aquamarine"></td>
+                        </tr>
+                        <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="p-3">62. Recibo capacitación que me ayuda a hacer mejor mi trabajo</td>
+                            <td class="p-3 text-center"><input type="radio" name="p62" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p62" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p62" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p62" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p62" class="h-4 w-4 text-aquamarine"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Sección 10: Jefes -->
+        <div class="mb-8">
+            <div class="section-title rounded-t-lg p-3 text-white font-bold flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+                Jefes con quien tenga más contacto
+            </div>
+            <div class="bg-white rounded-b-lg shadow-md p-4 overflow-x-auto">
+                <table class="w-full border-collapse">
+                    <thead>
+                        <tr class="bg-aquamarine text-white">
+                            <th class="p-3 text-left w-1/2">Pregunta</th>
+                            <th class="p-3 text-center">Siempre</th>
+                            <th class="p-3 text-center">Casi siempre</th>
+                            <th class="p-3 text-center">Algunas veces</th>
+                            <th class="p-3 text-center">Casi nunca</th>
+                            <th class="p-3 text-center">Nunca</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="p-3">63. Mi jefe me da instrucciones claras</td>
+                            <td class="p-3 text-center"><input type="radio" name="p63" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p63" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p63" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p63" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p63" class="h-4 w-4 text-aquamarine"></td>
+                        </tr>
+                        <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="p-3">64. Mi jefe ayuda a organizar mejor el trabajo</td>
+                            <td class="p-3 text-center"><input type="radio" name="p64" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p64" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p64" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p64" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p64" class="h-4 w-4 text-aquamarine"></td>
+                        </tr>
+                        <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="p-3">65. Mi jefe tiene en cuenta mis puntos de vista y opiniones</td>
+                            <td class="p-3 text-center"><input type="radio" name="p65" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p65" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p65" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p65" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p65" class="h-4 w-4 text-aquamarine"></td>
+                        </tr>
+                        <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="p-3">66. Mi jefe me anima para hacer mejor mi trabajo</td>
+                            <td class="p-3 text-center"><input type="radio" name="p66" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p66" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p66" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p66" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p66" class="h-4 w-4 text-aquamarine"></td>
+                        </tr>
+                        <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="p-3">67. Mi jefe distribuye las tareas de forma que me facilita el trabajo</td>
+                            <td class="p-3 text-center"><input type="radio" name="p67" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p67" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p67" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p67" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p67" class="h-4 w-4 text-aquamarine"></td>
+                        </tr>
+                        <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="p-3">68. Mi jefe me comunica a tiempo la información relacionada con el trabajo</td>
+                            <td class="p-3 text-center"><input type="radio" name="p68" class="h-4 w-4 text-aquamarine"></td>
+                            <td class="p-3 text-center"><input type="radio" name="p68" class="

@@ -1,0 +1,1529 @@
+/* Estilos globales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    background-color: #13151a;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-log {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+.container-log img {
+    max-width: 200px;
+    height: auto;
+    object-fit: contain;
+}
+
+.logo-image {
+    max-width: 200px;
+    height: auto;
+    object-fit: contain;
+}
+
+main {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.main-content {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    margin: auto;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.form-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2rem;
+    color: #2083c9;
+    margin-bottom: 1.5rem;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #304649
+}
+
+.form-input,
+.form-textarea,
+.form-select {
+    padding: 0.8rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.form-input:focus,
+.form-textarea:focus,
+.form-select:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.form-textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.radio-option {
+    display: flex;
+    align-items: center;
+}
+
+.radio-label {
+    margin-left: 0.5rem;
+    font-size: 1rem;
+    color: #333;
+}
+
+.submit-button {
+    background-color: #007BFF;
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+.container-page {}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.radio-group {
+    display: flex;
+    gap: 20px;
+    /* Espaciado entre las opciones */
+    justify-content: start;
+    flex-wrap: wrap;
+    /* Asegura que las opciones se ajusten en pantallas pequeñas */
+}
+
+/* Estilo para cada opción */
+.radio-option {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: #333;
+}
+
+.radio-input {
+    margin-right: 8px;
+    /* Espacio entre el radio button y el texto */
+    cursor: pointer;
+}
+
+.radio-option:hover {
+    color: #007BFF;
+    /* Cambio de color al pasar el mouse */
+}
+
+.radio-input:checked+.radio-option {
+    color: #007BFF;
+    /* Color al seleccionar */
+}
+
+/* Nuevos estilos para el formulario moderno */
+.bg-aquamarine {
+    background-color: #7FFFD4;
+}
+
+.bg-light-aquamarine {
+    background-color: #E0F7FA;
+}
+
+.border-aquamarine {
+    border-color: #4DB6AC;
+}
+
+.text-aquamarine {
+    color: #008080;
+}
+
+.hover\:bg-aquamarine-dark:hover {
+    background-color: #4DB6AC;
+}
+
+.section-title {
+    background: linear-gradient(90deg, #7FFFD4, #E0F7FA);
+}
+
+.radio-aquamarine:checked {
+    background-color: #4DB6AC;
+    border-color: #4DB6AC;
+}
+
+/* Estilos para el formulario de tabla */
+.form-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+
+.form-table th {
+    background-color: #7FFFD4;
+    color: white;
+    padding: 1rem;
+    text-align: left;
+    font-weight: bold;
+}
+
+.form-table td {
+    padding: 1rem;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.form-table tr:hover {
+    background-color: #f9fafb;
+    transition: background-color 0.2s ease;
+}
+
+/* Estilos para radio buttons personalizados */
+.radio-custom {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 1.2rem;
+    height: 1.2rem;
+    border: 2px solid #d1d5db;
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.2s ease;
+}
+
+.radio-custom:checked {
+    background-color: #4DB6AC;
+    border-color: #4DB6AC;
+}
+
+.radio-custom:checked::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.radio-custom:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(77, 182, 172, 0.3);
+}
+
+/* Estilos responsive */
+@media (max-width: 768px) {
+    .form-table {
+        font-size: 0.875rem;
+    }
+    
+    .form-table th,
+    .form-table td {
+        padding: 0.75rem 0.5rem;
+    }
+    
+    .form-table th:first-child,
+    .form-table td:first-child {
+        min-width: 200px;
+    }
+}
+
+/* Estilos para el contenedor principal */
+.min-h-screen {
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.max-w-6xl {
+    max-width: 72rem;
+}
+
+/* Estilos para sombras y bordes */
+.shadow-lg {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.rounded-xl {
+    border-radius: 0.75rem;
+}
+
+/* Estilos para transiciones */
+.transition-colors {
+    transition-property: color, background-color, border-color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
+
+/* Estilos para el botón de envío */
+.btn-submit {
+    background-color: #7FFFD4;
+    color: white;
+    font-weight: bold;
+    padding: 0.75rem 2rem;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.btn-submit:hover {
+    background-color: #4DB6AC;
+}
+
+.btn-submit:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(77, 182, 172, 0.3);
+}
+
+/* Estilos para el estado de carga */
+.loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px;
+}
+
+.loading-spinner {
+    border: 4px solid #f3f4f6;
+    border-top: 4px solid #7FFFD4;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Estilos para SweetAlert2 personalizados */
+.swal2-popup {
+    border-radius: 15px !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+}
+
+.swal2-title {
+    color: #1FB9B9 !important;
+    font-weight: bold !important;
+}
+
+.swal2-confirm {
+    background-color: #1FB9B9 !important;
+    border-radius: 8px !important;
+    padding: 12px 24px !important;
+    font-weight: 600 !important;
+    transition: all 0.3s ease !important;
+}
+
+.swal2-confirm:hover {
+    background-color: #1a9f9f !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 4px 12px rgba(31, 185, 185, 0.3) !important;
+}
+
+.swal2-icon {
+    border-width: 3px !important;
+}
+
+.swal2-icon.swal2-success {
+    border-color: #1FB9B9 !important;
+}
+
+.swal2-icon.swal2-success [class^='swal2-success-line'] {
+    background-color: #1FB9B9 !important;
+}
+
+.swal2-icon.swal2-success .swal2-success-ring {
+    border-color: #1FB9B9 !important;
+}
+
+.swal2-icon.swal2-warning {
+    border-color: #f39c12 !important;
+    color: #f39c12 !important;
+}
+
+.swal2-icon.swal2-error {
+    border-color: #e74c3c !important;
+    color: #e74c3c !important;
+}
+
+/* Animaciones personalizadas */
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.swal2-show {
+    animation: slideInFromTop 0.3s ease-out !important;
+}
+
+/* Estilos para el contenido del formulario */
+.form-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.form-header {
+    background: linear-gradient(135deg, #1FB9B9 0%, #1a9f9f 100%);
+    color: white;
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 25px rgba(31, 185, 185, 0.2);
+}
+
+.form-section {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #1FB9B9;
+}
+
+.form-section h3 {
+    color: #1FB9B9;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.form-section h3 svg {
+    margin-right: 10px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.form-field {
+    margin-bottom: 20px;
+}
+
+.form-field label {
+    display: block;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+}
+
+.form-field input,
+.form-field select {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid #e5e7eb;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background-color: white;
+}
+
+.form-field input:focus,
+.form-field select:focus {
+    outline: none;
+    border-color: #1FB9B9;
+    box-shadow: 0 0 0 3px rgba(31, 185, 185, 0.1);
+}
+
+.form-field input:hover,
+.form-field select:hover {
+    border-color: #1FB9B9;
+}
+
+/* Estilos para la tabla de preguntas */
+.questions-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.questions-table-mobile {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.questions-table thead {
+    background: linear-gradient(135deg, #1FB9B9 0%, #1a9f9f 100%);
+    color: white;
+}
+
+.questions-table th {
+    padding: 15px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.questions-table td {
+    padding: 15px;
+    border-bottom: 1px solid #f3f4f6;
+    transition: background-color 0.3s ease;
+}
+
+.questions-table tbody tr:hover {
+    background-color: #f9fafb;
+}
+
+.questions-table input[type="radio"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #1FB9B9;
+    cursor: pointer;
+}
+
+/* Estilos específicos para móviles en la tabla */
+@media (max-width: 768px) {
+    .questions-table-mobile {
+        font-size: 0.75rem;
+        min-width: 100%;
+    }
+    
+    .questions-table-mobile th,
+    .questions-table-mobile td {
+        padding: 0.5rem 0.25rem;
+        font-size: 0.7rem;
+    }
+    
+    .question-header {
+        width: 60% !important;
+        min-width: 120px !important;
+        font-size: 0.7rem !important;
+        padding: 0.5rem 0.25rem !important;
+    }
+    
+    .option-header {
+        width: 8% !important;
+        text-align: center !important;
+        font-size: 0.6rem !important;
+        padding: 0.5rem 0.1rem !important;
+    }
+    
+    .questions-table-mobile input[type="radio"] {
+        width: 16px;
+        height: 16px;
+        min-width: 16px;
+        min-height: 16px;
+    }
+    
+    .questions-table-mobile td:first-child {
+        width: 60% !important;
+        min-width: 120px !important;
+        font-size: 0.7rem !important;
+        line-height: 1.2 !important;
+        word-wrap: break-word !important;
+    }
+    
+    .questions-table-mobile td:not(:first-child) {
+        width: 8% !important;
+        text-align: center !important;
+        font-size: 0.6rem !important;
+    }
+    
+    /* Estilos específicos para las filas de preguntas */
+    .question-row-mobile {
+        border-bottom: 1px solid #e5e7eb;
+    }
+    
+    .question-text-mobile {
+        padding: 0.5rem 0.25rem !important;
+        font-size: 0.7rem !important;
+        line-height: 1.3 !important;
+        word-wrap: break-word !important;
+    }
+    
+    .question-number {
+        font-weight: 600 !important;
+        color: #1FB9B9 !important;
+        margin-right: 0.25rem !important;
+    }
+    
+    .radio-cell-mobile {
+        padding: 0.5rem 0.1rem !important;
+        text-align: center !important;
+        vertical-align: middle !important;
+    }
+    
+    .radio-input-mobile {
+        width: 16px !important;
+        height: 16px !important;
+        min-width: 16px !important;
+        min-height: 16px !important;
+        accent-color: #1FB9B9 !important;
+        cursor: pointer !important;
+    }
+    
+    /* Estilos para la versión móvil vertical */
+    .question-mobile-card {
+        transition: all 0.3s ease;
+    }
+    
+    .question-mobile-card:hover {
+        background-color: #f9fafb;
+    }
+    
+    .question-mobile-card > div {
+        transition: all 0.2s ease;
+        border-radius: 8px;
+        margin: 0.25rem 0;
+    }
+    
+    .question-mobile-card > div:hover {
+        background-color: #f3f4f6;
+        transform: translateY(-1px);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Estilos para radio buttons personalizados en móvil */
+    .question-mobile-card > div > div > div {
+        transition: all 0.2s ease;
+        user-select: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+    }
+    
+    .question-mobile-card > div:hover > div > div {
+        transform: scale(1.1);
+    }
+    
+    .question-mobile-card > div > div > div > div {
+        user-select: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+    }
+    
+    .question-mobile-card input[type="radio"]:checked + span {
+        color: #1FB9B9;
+        font-weight: 600;
+    }
+    
+    /* Estilos para la versión de escritorio */
+    .radio-cell-mobile {
+        transition: all 0.2s ease;
+        border-radius: 4px;
+    }
+    
+    .radio-cell-mobile:hover {
+        background-color: #f3f4f6 !important;
+        transform: scale(1.05);
+    }
+    
+    /* Estilos para radio buttons personalizados */
+    .radio-cell-mobile > div > div {
+        transition: all 0.2s ease;
+        user-select: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+    }
+    
+    .radio-cell-mobile:hover > div > div {
+        transform: scale(1.1);
+    }
+    
+    .radio-cell-mobile > div > div > div {
+        user-select: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .questions-table-mobile {
+        font-size: 0.65rem;
+    }
+    
+    .questions-table-mobile th,
+    .questions-table-mobile td {
+        padding: 0.25rem 0.1rem;
+        font-size: 0.6rem;
+    }
+    
+    .question-header {
+        font-size: 0.6rem !important;
+        padding: 0.25rem 0.1rem !important;
+    }
+    
+    .option-header {
+        font-size: 0.5rem !important;
+        padding: 0.25rem 0.05rem !important;
+    }
+    
+    .questions-table-mobile input[type="radio"] {
+        width: 14px;
+        height: 14px;
+        min-width: 14px;
+        min-height: 14px;
+    }
+    
+    .questions-table-mobile td:first-child {
+        font-size: 0.6rem !important;
+    }
+    
+    .questions-table-mobile td:not(:first-child) {
+        font-size: 0.5rem !important;
+    }
+    
+    /* Estilos específicos para pantallas muy pequeñas */
+    .question-text-mobile {
+        font-size: 0.6rem !important;
+        line-height: 1.2 !important;
+        padding: 0.25rem 0.1rem !important;
+    }
+    
+    .question-number {
+        font-size: 0.6rem !important;
+    }
+    
+    .radio-cell-mobile {
+        padding: 0.25rem 0.05rem !important;
+    }
+    
+    .radio-input-mobile {
+        width: 14px !important;
+        height: 14px !important;
+        min-width: 14px !important;
+        min-height: 14px !important;
+    }
+}
+
+/* Mejoras para la experiencia táctil en dispositivos móviles */
+@media (hover: none) and (pointer: coarse) {
+    .radio-input-mobile {
+        min-width: 24px !important;
+        min-height: 24px !important;
+        width: 24px !important;
+        height: 24px !important;
+    }
+    
+    .radio-cell-mobile {
+        padding: 0.5rem 0.25rem !important;
+    }
+    
+    .question-row-mobile:hover {
+        background-color: #f3f4f6 !important;
+    }
+    
+    /* Mejoras para la versión móvil vertical */
+    .question-mobile-card input[type="radio"] {
+        min-width: 24px !important;
+        min-height: 24px !important;
+        width: 24px !important;
+        height: 24px !important;
+    }
+    
+    .question-mobile-card > div {
+        min-height: 44px !important;
+        padding: 0.75rem 1rem !important;
+    }
+    
+    .question-mobile-card {
+        padding: 1rem !important;
+    }
+    
+    /* Mejoras para la versión de escritorio */
+    .radio-cell-mobile {
+        min-height: 44px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+    
+    .radio-cell-mobile label {
+        min-height: 44px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        width: 100% !important;
+        height: 100% !important;
+    }
+}
+
+/* Estilos para el botón de envío */
+.submit-button {
+    background: linear-gradient(135deg, #1FB9B9 0%, #1a9f9f 100%);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    box-shadow: 0 4px 15px rgba(31, 185, 185, 0.3);
+}
+
+.submit-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(31, 185, 185, 0.4);
+}
+
+.submit-button:active {
+    transform: translateY(0);
+}
+
+/* Estilos para el indicador de progreso */
+.progress-container {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.progress-bar {
+    width: 100%;
+    height: 8px;
+    background-color: #e5e7eb;
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 15px 0;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #1FB9B9 0%, #1a9f9f 100%);
+    border-radius: 4px;
+    transition: width 0.5s ease;
+}
+
+/* Estilos para la pantalla de carga */
+.loading-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #1FB9B9 0%, #1a9f9f 100%);
+}
+
+.loading-spinner {
+    width: 50px;
+    height: 50px;
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    border-top: 4px solid white;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Estilos para la pantalla de completado */
+.completed-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #1FB9B9 0%, #1a9f9f 100%);
+}
+
+.completed-card {
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 90%;
+}
+
+.completed-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+.completed-icon svg {
+    width: 40px;
+    height: 40px;
+    color: white;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .questions-table {
+        font-size: 0.8rem;
+    }
+    
+    .questions-table th,
+    .questions-table td {
+        padding: 10px 8px;
+    }
+    
+    .form-header {
+        padding: 20px;
+    }
+    
+    .form-section {
+        padding: 20px;
+    }
+}
+
+/* Estilos para los campos de información personal y laboral */
+.info-section {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #1FB9B9;
+}
+
+.info-section h3 {
+    color: #1FB9B9;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.info-section h3 svg {
+    margin-right: 15px;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+.info-subsection {
+    background: #f8fafc;
+    border-radius: 12px;
+    padding: 25px;
+    border: 1px solid #e2e8f0;
+}
+
+.info-subsection h4 {
+    color: #374151;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.info-subsection h4 .icon-container {
+    background: #1FB9B9;
+    padding: 12px;
+    border-radius: 50%;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-subsection h4 .icon-container svg {
+    width: 24px;
+    height: 24px;
+    color: white;
+}
+
+.field-group {
+    margin-bottom: 20px;
+}
+
+.field-group label {
+    display: block;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+}
+
+.field-group input,
+.field-group select {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid #e5e7eb;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background-color: white;
+}
+
+.field-group input:focus,
+.field-group select:focus {
+    outline: none;
+    border-color: #1FB9B9;
+    box-shadow: 0 0 0 3px rgba(31, 185, 185, 0.1);
+}
+
+.field-group input:hover,
+.field-group select:hover {
+    border-color: #1FB9B9;
+}
+
+/* Estilos para react-select personalizados */
+.css-13cymwt-control,
+.css-t3ipsp-control {
+    border: 2px solid #e5e7eb !important;
+    border-radius: 8px !important;
+    min-height: 48px !important;
+    transition: all 0.3s ease !important;
+}
+
+.css-13cymwt-control:hover,
+.css-t3ipsp-control:hover {
+    border-color: #1FB9B9 !important;
+}
+
+.css-t3ipsp-control {
+    border-color: #1FB9B9 !important;
+    box-shadow: 0 0 0 3px rgba(31, 185, 185, 0.1) !important;
+}
+
+.css-1dimb5e-singleValue {
+    color: #374151 !important;
+    font-weight: 500 !important;
+}
+
+.css-1fdsijx-ValueContainer {
+    padding: 0 16px !important;
+}
+
+.css-1jqq78o-placeholder {
+    color: #9ca3af !important;
+}
+
+.css-1u9des2-indicatorSeparator {
+    display: none !important;
+}
+
+.css-1xc3v61-indicatorContainer {
+    color: #1FB9B9 !important;
+}
+
+.css-1xc3v61-indicatorContainer:hover {
+    color: #1a9f9f !important;
+}
+
+/* Estilos para las instrucciones */
+.instructions-section {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #1FB9B9;
+    transition: all 0.3s ease;
+}
+
+.instructions-section:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(31, 185, 185, 0.3), 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Animación de focus para las instrucciones */
+@keyframes instructionsFocus {
+    0% {
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+    50% {
+        box-shadow: 0 0 0 3px rgba(31, 185, 185, 0.5), 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+    100% {
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.instructions-focus {
+    animation: instructionsFocus 2s ease-in-out;
+}
+
+.instructions-section h3 {
+    color: #1FB9B9;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.instructions-section h3 svg {
+    margin-right: 10px;
+}
+
+.instructions-content {
+    color: #374151;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.instructions-content p {
+    margin-bottom: 12px;
+}
+
+/* Estilos para el formulario principal */
+.form-main {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-footer {
+    background: #f8fafc;
+    padding: 25px;
+    border-top: 1px solid #e5e7eb;
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilos para el estado de no disponible */
+.unavailable-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #1FB9B9 0%, #1a9f9f 100%);
+}
+
+.unavailable-card {
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 90%;
+}
+
+.unavailable-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+.unavailable-icon svg {
+    width: 40px;
+    height: 40px;
+    color: white;
+}
+
+/* Estilos responsive mejorados para móviles */
+@media (max-width: 768px) {
+    body {
+        padding: 5px;
+    }
+    
+    main {
+        padding: 0.5rem;
+        margin: 0;
+        border-radius: 0;
+    }
+    
+    .container-log img {
+        max-width: 150px;
+    }
+    
+    /* Mejoras para el contenedor principal */
+    .min-h-screen {
+        min-height: 100vh;
+        padding: 0;
+    }
+    
+    .container {
+        padding: 0 0.5rem;
+    }
+    
+    /* Mejoras para el contenedor del formulario */
+    .form-container-mobile {
+        padding: 0.5rem !important;
+        max-width: 100% !important;
+    }
+    
+    /* Mejoras para el encabezado */
+    .header-mobile {
+        padding: 1rem !important;
+        margin-bottom: 1rem !important;
+    }
+    
+    .header-mobile h1 {
+        font-size: 1.2rem !important;
+        line-height: 1.3 !important;
+    }
+    
+    .header-mobile .text-white {
+        font-size: 0.8rem !important;
+    }
+    
+    /* Mejoras para el contenedor de fecha */
+    .date-container-mobile {
+        width: 100% !important;
+        margin-top: 1rem !important;
+    }
+    
+    /* Mejoras para el indicador de progreso */
+    .progress-container-mobile {
+        padding: 1rem !important;
+        margin-bottom: 1rem !important;
+    }
+    
+    .progress-container-mobile h3 {
+        font-size: 1rem !important;
+    }
+    
+    .progress-container-mobile .text-sm {
+        font-size: 0.8rem !important;
+    }
+    
+    /* Mejoras para la información personal y laboral */
+    .bg-white.rounded-xl.shadow-md.p-6.mb-8 {
+        padding: 1rem !important;
+        margin-bottom: 1rem !important;
+    }
+    
+    .grid.grid-cols-1.md\\:grid-cols-2 {
+        grid-template-columns: 1fr !important;
+        gap: 1rem !important;
+    }
+    
+    .space-y-4 > div {
+        margin-bottom: 1rem !important;
+    }
+    
+    /* Mejoras para las instrucciones */
+    #instructions-section {
+        padding: 1rem !important;
+        margin-bottom: 1rem !important;
+    }
+    
+    #instructions-section h3 {
+        font-size: 1.2rem !important;
+    }
+    
+    #instructions-section .space-y-3 {
+        font-size: 0.9rem !important;
+    }
+    
+    /* Mejoras para la tabla de preguntas (versión de escritorio) */
+    .overflow-x-auto {
+        margin: 0 -0.5rem;
+    }
+    
+    .w-full.border-collapse {
+        font-size: 0.8rem !important;
+    }
+    
+    .w-full.border-collapse th {
+        padding: 0.5rem 0.25rem !important;
+        font-size: 0.7rem !important;
+        text-align: center !important;
+    }
+    
+    .w-full.border-collapse td {
+        padding: 0.5rem 0.25rem !important;
+        font-size: 0.75rem !important;
+    }
+    
+    .w-full.border-collapse th:first-child,
+    .w-full.border-collapse td:first-child {
+        width: 60% !important;
+        min-width: 120px !important;
+    }
+    
+    .w-full.border-collapse th:not(:first-child),
+    .w-full.border-collapse td:not(:first-child) {
+        width: 8% !important;
+        text-align: center !important;
+    }
+    
+    /* Mejoras para los radio buttons */
+    .w-full.border-collapse input[type="radio"] {
+        width: 16px !important;
+        height: 16px !important;
+    }
+    
+    /* Mejoras para el botón de envío */
+    .p-6.bg-gray-50 {
+        padding: 1rem !important;
+    }
+    
+    .w-full.md\\:w-auto {
+        width: 100% !important;
+        padding: 0.75rem 1rem !important;
+        font-size: 0.9rem !important;
+    }
+    
+    /* Mejoras para el indicador de progreso */
+    .bg-white.rounded-xl.shadow-md.p-6.mb-6 {
+        padding: 1rem !important;
+        margin-bottom: 1rem !important;
+    }
+    
+    .text-lg.font-semibold {
+        font-size: 1rem !important;
+    }
+    
+    .text-sm.text-gray-600 {
+        font-size: 0.8rem !important;
+    }
+    
+    /* Mejoras para los campos de formulario */
+    .w-full.px-3.py-2 {
+        padding: 0.5rem 0.75rem !important;
+        font-size: 0.9rem !important;
+    }
+    
+    /* Mejoras para react-select en móviles */
+    .css-13cymwt-control,
+    .css-t3ipsp-control {
+        min-height: 40px !important;
+        font-size: 0.9rem !important;
+    }
+    
+    .css-1fdsijx-ValueContainer {
+        padding: 0 12px !important;
+    }
+    
+    /* Mejoras para los iconos */
+    .h-6.w-6 {
+        width: 1.2rem !important;
+        height: 1.2rem !important;
+    }
+    
+    .h-5.w-5 {
+        width: 1rem !important;
+        height: 1rem !important;
+    }
+    
+    /* Mejoras para los badges y elementos decorativos */
+    .bg-\[#1FB9B9\].p-3.rounded-full {
+        padding: 0.5rem !important;
+    }
+    
+    .bg-\[#1FB9B9\].p-3.rounded-full svg {
+        width: 1rem !important;
+        height: 1rem !important;
+    }
+    
+    /* Estilos específicos para la versión móvil vertical */
+    .question-mobile-card {
+        border-radius: 8px;
+        margin: 0.5rem 0;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
+    
+    .question-mobile-card:first-child {
+        margin-top: 0;
+    }
+    
+    .question-mobile-card:last-child {
+        margin-bottom: 0;
+    }
+    
+    .question-mobile-card .question-number {
+        color: #1FB9B9;
+        font-weight: 600;
+        font-size: 0.9rem;
+    }
+    
+    .question-mobile-card label {
+        border-radius: 6px;
+        margin: 0.25rem 0;
+    }
+    
+    .question-mobile-card label:first-child {
+        margin-top: 0;
+    }
+    
+    .question-mobile-card label:last-child {
+        margin-bottom: 0;
+    }
+}
+
+/* Estilos específicos para pantallas muy pequeñas */
+@media (max-width: 480px) {
+    .container-log img {
+        max-width: 120px;
+    }
+    
+    .header-mobile h1 {
+        font-size: 1rem !important;
+    }
+    
+    .form-container-mobile {
+        padding: 0.25rem !important;
+    }
+    
+    .header-mobile {
+        padding: 0.75rem !important;
+    }
+    
+    .progress-container-mobile {
+        padding: 0.75rem !important;
+    }
+    
+    .w-full.border-collapse {
+        font-size: 0.7rem !important;
+    }
+    
+    .w-full.border-collapse th {
+        font-size: 0.6rem !important;
+        padding: 0.25rem 0.1rem !important;
+    }
+    
+    .w-full.border-collapse td {
+        font-size: 0.65rem !important;
+        text-align: center !important;
+        padding: 0.25rem 0.50rem !important;
+    }
+    
+    .w-full.border-collapse input[type="radio"] {
+        width: 14px !important;
+        height: 14px !important;
+    }
+    
+    /* Ajustes para el texto de las preguntas */
+    .w-full.border-collapse td:first-child {
+        line-height: 1.2 !important;
+        word-wrap: break-word !important;
+    }
+}
+
+/* Mejoras para la experiencia táctil */
+@media (hover: none) and (pointer: coarse) {
+    .w-full.border-collapse input[type="radio"] {
+        min-width: 24px !important;
+        min-height: 24px !important;
+    }
+    
+    .w-full.px-3.py-2,
+    .css-13cymwt-control,
+    .css-t3ipsp-control {
+        min-height: 44px !important;
+    }
+    
+    .w-full.md\\:w-auto {
+        min-height: 48px !important;
+    }
+}
+
+/* Estilos para el botón de envío móvil */
+.submit-button-mobile {
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .submit-button-mobile {
+        width: 100% !important;
+        padding: 0.75rem 1rem !important;
+        font-size: 0.9rem !important;
+        min-height: 48px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .submit-button-mobile {
+        font-size: 0.8rem !important;
+        padding: 0.5rem 0.75rem !important;
+    }
+}
